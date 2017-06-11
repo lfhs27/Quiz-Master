@@ -12,4 +12,15 @@
  *
  *= require_tree .
  *= require_self
+ 
+ *= require font-awesome.min.css
+ *= require simple-line-icons.min.css
+ *= require bootstrap-switch.min.css
+ 
+ *= require components.min.css
+ *= require plugins.min.css
+ 
+ *= require layout.min.css
+ *= require blue.min.css
+ *= require custom.min.css
  */

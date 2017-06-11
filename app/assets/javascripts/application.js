@@ -13,3 +13,10 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+//= require jquery.min.js
+//= require bootstrap.min.js
+//= require js.cookie.min.js
+//= require jquery.slimscroll.min.js
+//= require jquery.blockui.min.js
+//= require bootstrap-switch.min.js
