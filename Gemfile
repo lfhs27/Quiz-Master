@@ -20,6 +20,9 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'bootstrap-sass', '3.3.7'
+gem 'humanize', :git => 'git://github.com/radar/humanize.git'
+gem 'finishing_moves'
+gem 'rails-i18n'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
