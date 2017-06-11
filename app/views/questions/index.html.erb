@@ -22,7 +22,30 @@
 				<div class="portlet-body">
 					<div class="row">
 						<div class="col-md-12">
-							<div id="map" style="height:600px;">hgjfghjfghjfghj</div>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Pregunta</th>
+										<th>Respuesta</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<% @questions.each do |question| %>
+									<tr>
+										<td><%= question.pregunta %></td>
+										<td><%= question.respuesta %></td>
+										<td>
+											<%= link_to '', question_path(question), class: "btn-xs btn btn-warning fa fa-search" %>
+											<%= link_to '', edit_question_path(question), class: "btn-xs btn btn-primary fa fa-pencil" %>
+											<%= link_to '', question_path(question), method: :delete, data: { confirm: 'Seguro de eliminar la pregunta?' }, class: "btn-xs btn btn-danger fa fa-trash" %>
+										</td>
+									</tr>
+									<% end %>
+								</tbody>
+							</table>
+							
+							<%= link_to 'Agregar Pregunta', new_question_path, class: "btn btn-primary" %>
 						</div>
 					</div>
 				</div>

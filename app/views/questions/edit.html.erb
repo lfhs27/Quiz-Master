@@ -1,7 +1,7 @@
 <div class="page-content">
 	<!-- BEGIN PAGE HEADER-->
 	<h1 class="page-title"> Preguntas
-		<small>Crear Pregunta</small>
+		<small>Editar Pregunta</small>
 	</h1>
 	<div class="page-bar">
 		<ul class="page-breadcrumb">
@@ -22,7 +22,7 @@
 				<div class="portlet-body">
 					<div class="row">
 						<div class="col-md-12">							
-							<%= form_for :question, url: questions_path do |f| %>	
+							<%= form_for(@question) do |f| %>
 								<% if @question && @question.errors.any? %>
 									<div class="alert alert-danger">
 										<strong>
@@ -46,7 +46,7 @@
 								</p>
 							 
 								<p>
-									<%= f.submit 'Crear', class: 'btn btn-success' %>
+									<%= f.submit 'Actualizar', class: 'btn btn-success' %>
 								</p>
 							<% end %>
 						</div>
