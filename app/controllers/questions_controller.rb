@@ -1,5 +1,6 @@
 class QuestionsController < ApplicationController
 	layout 'dashboard'
+	before_action :set_locale
 	def index
 		@questions = Question.all
 	end
@@ -46,4 +47,8 @@ class QuestionsController < ApplicationController
 		def question_params
 			params.require(:question).permit(:pregunta, :respuesta)
 		end
+		
+	def set_locale
+	  I18n.locale = :es
+	end
 end
