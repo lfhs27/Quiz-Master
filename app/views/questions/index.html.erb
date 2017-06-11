@@ -33,7 +33,7 @@
 								<tbody>
 									<% @questions.each do |question| %>
 									<tr>
-										<td><%= question.pregunta %></td>
+										<td><%= question.pregunta.html_safe %></td>
 										<td><%= question.respuesta %></td>
 										<td>
 											<%= link_to '', question_path(question), class: "btn-xs btn btn-warning fa fa-search" %>

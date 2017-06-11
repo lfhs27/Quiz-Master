@@ -17,7 +17,7 @@
 	</div>
 	<!-- END PAGE HEADER-->
 	<div class="row">
-		<div class="col-xd-12 col-md-4">
+		<div class="col-xd-12 col-md-12">
 			<div class="portlet light ">
 				<div class="portlet-body">
 					<div class="row">
@@ -58,6 +58,19 @@
 </div>
 <script>
 $(document).ready(function(){
-
+	CKEDITOR.replace( 'question_pregunta', {
+		// Define the toolbar groups as it is a more accessible solution.
+		toolbarGroups: [
+			{"name":"basicstyles","groups":["basicstyles"]},
+			{"name":"links","groups":["links"]},
+			{"name":"paragraph","groups":["list","blocks"]},
+			{"name":"document","groups":["mode"]},
+			{"name":"insert","groups":["insert"]},
+			{"name":"styles","groups":["styles"]},
+			{"name":"about","groups":["about"]}
+		],
+		// Remove the redundant buttons from toolbar groups defined above.
+		removeButtons: 'Underline,Strike,Subscript,Superscript,Anchor,Styles,Specialchar'
+	} );
 });
 </script>
