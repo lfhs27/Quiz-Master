@@ -36,9 +36,9 @@
 										<td><%= question.pregunta.html_safe %></td>
 										<td><%= question.respuesta %></td>
 										<td>
-											<%= link_to '', question_path(question), class: "btn-xs btn btn-warning fa fa-search" %>
-											<%= link_to '', edit_question_path(question), class: "btn-xs btn btn-primary fa fa-pencil" %>
-											<%= link_to '', question_path(question), method: :delete, data: { confirm: 'Seguro de eliminar la pregunta?' }, class: "btn-xs btn btn-danger fa fa-trash" %>
+											<%= link_to 'Ver', question_path(question), class: "btn-xs btn btn-warning" %>
+											<%= link_to 'Editar', edit_question_path(question), class: "btn-xs btn btn-primary" %>
+											<%= link_to 'Eliminar', question_path(question), method: :delete, data: { confirm: 'Seguro de eliminar la pregunta?' }, class: "btn-xs btn btn-danger" %>
 										</td>
 									</tr>
 									<% end %>
