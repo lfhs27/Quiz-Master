@@ -53,6 +53,8 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-wysihtml5-rails (0.3.3.8)
+      railties (>= 3.0)
     builder (3.2.3)
     byebug (9.0.6)
     capybara (2.14.2)
@@ -157,8 +159,6 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
-    trix (0.10.1)
-      rails
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.3)
@@ -185,6 +185,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (= 3.3.7)
+  bootstrap-wysihtml5-rails
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
@@ -200,7 +201,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   selenium-webdriver
   sqlite3
-  trix
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
