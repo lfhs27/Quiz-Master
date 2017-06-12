@@ -20,3 +20,4 @@
 //= require jquery.slimscroll.min.js
 //= require jquery.blockui.min.js
 //= require bootstrap-switch.min.js
+//= require trix
