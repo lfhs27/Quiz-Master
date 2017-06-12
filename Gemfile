@@ -25,6 +25,7 @@ gem 'bootstrap-wysihtml5-rails'
 gem 'humanize', :git => 'git://github.com/radar/humanize.git'
 gem 'finishing_moves'
 gem 'rails-i18n'
+gem 'font-awesome-sass'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
